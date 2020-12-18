@@ -18,13 +18,7 @@ function setup() {
   paddle1 = createSprite(150,60,300,5);
   paddle2 = createSprite(150,100,300,5);
   paddle3 = createSprite(150,140,300,5);
-  ball9 = createSprite(50,0,10,10);
-  ball9.velocityY = 2;
-  ball10 = createSprite(150,0,10,10);
-  ball10.velocityY = 2;
-  ball11 = createSprite(250,0,10,10);
-  ball11.velocityY = 2;
-
+  
   ball1.shapeColor = "white";
   ball2.shapeColor = "white";
   ball3.shapeColor = "white";
@@ -36,9 +30,7 @@ function setup() {
   paddle1.shapeColor = "white";
   paddle2.shapeColor = "white";
   paddle3.shapeColor = "white";
-  ball9.shapeColor = "green";
-  ball10.shapeColor = "green";
-  ball11.shapeColor = "green";
+  
 }
 
 function draw() {
@@ -51,104 +43,28 @@ function draw() {
     
   }
   
-  if(ball1.collide(ball9)){
-    ball1.shapeColor = "red";
-    ball1.velocityX = 0;
-    ball9.velocityY = 0;
-    ball1.velocityY = 0;
-  }
-  
-  if(ball1.collide(ball10)){
-    ball1.shapeColor = "red";
-    ball1.velocityX = 0;
-    ball10.velocityY = 0;
-    ball1.velocityY = 0;
-  }
-  
-  if(ball1.collide(ball11)){
-    ball1.shapeColor = "red";
-    ball1.velocityX = 0;
-    ball11.velocityY = 0;
-    ball1.velocityY = 0;
-  }
+ 
 
   if(ball2.collide(ball6)  ){
-    ball2.shapeColor = "red";
+    ball2.shapeColor = "green";
     ball2.velocityX = 0;
     
   }
 
-  if(ball2.collide(ball9)  ){
-    ball2.shapeColor = "red";
-    ball2.velocityX = 0;
-    ball9.velocityY = 0;
-    ball2.velocityY = 0;
-  }
-
-  if(ball2.collide(ball10)  ){
-    ball2.shapeColor = "red";
-    ball2.velocityX = 0;
-    ball10.velocityY = 0;
-    ball2.velocityY = 0;
-  }
-
-  if(ball2.collide(ball11)  ){
-    ball2.shapeColor = "red";
-    ball2.velocityX = 0;
-    ball11.velocityY = 0;
-    ball2.velocityY = 0;
-  }
+ 
 
   if(ball3.collide(ball7) ){
-    ball3.shapeColor = "red";
+    ball3.shapeColor = "pink";
     ball3.velocityX = 0;
   }
 
-  if(ball3.collide(ball9) ){
-    ball3.shapeColor = "red";
-    ball3.velocityX = 0;
-    ball9.velocityY = 0;
-    ball3.velocityY = 0;
-  }
-
-  if(ball3.collide(ball10) ){
-    ball3.shapeColor = "red";
-    ball3.velocityX = 0;
-    ball10.velocityY = 0;
-    ball3.velocityY = 0;
-  }
-
-  if(ball3.collide(ball11) ){
-    ball3.shapeColor = "red";
-    ball3.velocityX = 0;
-    ball11.velocityY= 0;
-    ball3.velocityY = 0;
-  }
+  
 
   if(ball4.collide(ball8)  ){
-    ball4.shapeColor = "red";
+    ball4.shapeColor = "yellow";
     ball4.velocityX = 0;
   }
   
-  if(ball4.collide(ball9)  ){
-    ball4.shapeColor = "red";
-    ball4.velocityX = 0;
-    ball9.velocityY = 0;
-    ball4.velocityY = 0;
-  }
-
-  if(ball4.collide(ball10)  ){
-    ball4.shapeColor = "red";
-    ball4.velocityX = 0;
-    ball10.velocityY = 0;
-    ball4.velocityY = 0;
-  }
-
-  if(ball4.collide(ball11)  ){
-    ball4.shapeColor = "red";
-    ball4.velocityX = 0;
-    ball11.velocityY = 0;
-    ball4.velocityY = 0;
-  }
+  
   drawSprites();
 }
